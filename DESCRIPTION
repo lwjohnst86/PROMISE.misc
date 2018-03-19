@@ -1,0 +1,25 @@
+Package: PROMISE.misc
+Title: Miscellaneous Helper Functions for the PROMISE Cohort
+Version: 0.0.0.9000
+Authors@R: person("Luke", "Johnston", email = "lwjohnst@gmail.com", role = c("aut", "cre"))
+Description: This package contains common helper functions for the PROMISE cohort. 
+License: MIT + file LICENSE
+Depends: 
+    R (>= 3.4.2)
+Imports: 
+    dplyr,
+    magrittr,
+    stats,
+    stringr,
+    tidyr
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: knitr
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1
+URL: https://github.com/lwjohnst86/PROMISE.misc
+BugReports: https://github.com/lwjohnst86/PROMISE.misc/issues
