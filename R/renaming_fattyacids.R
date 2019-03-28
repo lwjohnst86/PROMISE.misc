@@ -27,7 +27,7 @@
 renaming_fa <- function(fa, keep.fraction = TRUE) {
     fa <- fa %>%
         stringr::str_replace("([:digit:]{2})([:digit:])", "\\1:\\2") %>%
-        stringr::str_replace("n([:digit:])$", " n-\\1")
+        stringr::str_replace("n([:digit:])(.?)$", " n-\\1\\2")
 
     if (keep.fraction) {
         fa <- sub("(ne|tg|pl|ce)(\\d)", "\\U\\1 \\2", fa, perl = TRUE)
